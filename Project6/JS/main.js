@@ -1,11 +1,11 @@
-function Ride_Function() {
+function Ride_Function() {  //ternary function with input
     var Height, Can_ride;
     Height = document.getElementById("Height").value;
-    Can_ride = (Height < 50) ? "You are too small":"You are big enough";
+    Can_ride = (Height < 50) ? "You are too small":"You are big enough"; //over 50 cm  will return the message on the right, under, left
     document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
 }
 
-function Vehicle(Make, Model, Year, Color) {
+function Vehicle(Make, Model, Year, Color) { //constructor function
 	this.Vehicle_Make = Make;
 	this.Vehicle_Model = Model;
 	this.Vehicle_Year = Year;
@@ -19,7 +19,7 @@ function myFunction() {
 	"Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;
 }
 
-function nestedfunction() {
+function nestedfunction() { //nested function - one within another
 	document.getElementById("Nested_Function").innerHTML = Count();
 	function Count() {
 		var Starting_point = 7;
