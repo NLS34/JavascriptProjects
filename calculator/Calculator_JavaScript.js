@@ -77,11 +77,23 @@ function Handle_Operator(Next_Operator) {
 			return;
 		}
 		
-		if(target.classList.contains('decimal')) {
-			Input_Decimal(target.value);
+		if (target.classList.contains('operator')) {
+			Handle_Operator(target.value);
 			Update_Display();
-				return;
-			}
+			return;
+		}
+		
+		if(target.classList.contains('decimal')) {
+		Input_Decimal(target.value);
+		Update_Display();
+			return;
+		}
+		
+		if (target.classList.contains('all-clear')) {
+			Calculator_Reset();
+			Update_Display();
+			return;
+		}
 			
 			Input_Digit(target.value);
 			Update_Display();
