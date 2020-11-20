@@ -27,6 +27,7 @@ function cat_pics() {
 	document.getElementById("Cat").innerHTML = "In this picture, the cat is " + Cat_Picture[2] + ".";
 }
 
+function car1() {
 let car = {
 	make: "Dodge ",
 	model: "Viper ",
@@ -38,3 +39,4 @@ let car = {
 };
 document.getElementById("Car_Object").innerHTML = car.description();
 
+}
