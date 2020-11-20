@@ -17,7 +17,7 @@ function placeXOrO(squareNumber) {
 			activePlayer = 'X';
 		}
 		
-		audio('/media/place.mp3');
+		audio('./media/place.mp3');
 		if(activePlayer === 'O'){
 			disableClick();
 			setTimeout(function (){ computersTurn(); }, 1000);
