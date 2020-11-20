@@ -5,9 +5,9 @@ function placeXOrO(squareNumber) {
 	if (!selectedSquares.some(element => element.includes(squareNumber))) {
 		let select = document.getElementById(squareNumber);
 		if (activePlayer === 'X') {
-			select.style.backgroundImage = 'url("images/x.png")';
+			select.style.backgroundImage = 'url("images/x.jpg")';
 		} else {
-			select.style.backgroundImage = 'url("images/o.png")';
+			select.style.backgroundImage = 'url("images/o.jpg")';
 		}
 		selectedSquares.push(squareNumber + activePlayer);
 		checkWinConditions();
