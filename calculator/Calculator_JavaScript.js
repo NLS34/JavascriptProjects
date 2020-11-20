@@ -67,7 +67,7 @@ function Handle_Operator(Next_Operator) {
 	
 	function Update_Display() {
 		const display = document.querySelector('.calculator-screen');
-		display.value = Calculator.Displau_Value;
+		display.value = Calculator.Display_Value;
 	}
 	Update_Display();
 	const keys = document.querySelector('.calculator-keys');
